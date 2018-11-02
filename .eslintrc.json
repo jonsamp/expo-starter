@@ -2,25 +2,21 @@
   "parser": "babel-eslint",
   "extends": ["airbnb", "prettier", "prettier/react"],
   "parserOptions": {
-    "ecmaVersion": 7,
+    "ecmaVersion": 2018,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true,
-      "experimentalObjectRestSpread": true
+      "jsx": true
     }
   },
   "env": {
     "es6": true,
-    "browser": true,
     "node": true,
     "jest": true
   },
   "globals": {
-    "__DEV__": true,
-    "__ENV__": true
+    "__DEV__": true
   },
   "rules": {
-    "jsx-a11y/anchor-is-valid": 0,
     "comma-dangle": [
       "error",
       {
@@ -31,25 +27,6 @@
         "functions": "ignore"
       }
     ],
-    "func-names": 0,
-    "padded-blocks": 0,
-    "id-length": 0,
-    "new-cap": 0,
-    "max-len": 0,
-    "object-curly-spacing": 0,
-    "prefer-template": 0,
-    "quote-props": 0,
-    "arrow-body-style": 0,
-    "no-param-reassign": 0,
-    "no-alert": 0,
-    "arrow-parens": 0,
-    "no-underscore-dangle": 0,
-    "class-methods-use-this": 0,
-    "no-plusplus": 0,
-    "eqeqeq": 0,
-    "no-case-declarations": 0,
-    "no-console": 0,
-    "default-case": 0,
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "no-unused-vars": [
       "error",
@@ -60,18 +37,7 @@
         "argsIgnorePattern": "^_"
       }
     ],
-    "no-cond-assign": [2, "except-parens"],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/require-default-props": 0,
-    "react/sort-comp": 0,
-    "react/no-unused-prop-types": 0,
-    "react/prefer-stateless-function": 0,
-    "react/forbid-prop-types": 0,
-    "react/jsx-boolean-value": 0,
-    "react/no-danger": 0,
-    "import/no-unresolved": 0,
-    "import/extensions": 0,
-    "import/no-extraneous-dependencies": 0,
-    "import/no-named-as-default": 0
+    "jsx-a11y/accessible-emoji": "off"
   }
 }
